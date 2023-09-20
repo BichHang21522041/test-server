@@ -1,2 +1,14 @@
 Flask
 Gunicorn
+open_clip
+os
+flask
+flask_cors
+numpy
+torch
+matplotlib.pyplot
+torch.nn
+PIL
+collections
+torchvision.datasets
+torchvision
