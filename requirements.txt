@@ -6,6 +6,4 @@ flask_cors
 numpy
 torch
 matplotlib
-PIL
-collections
 torchvision
