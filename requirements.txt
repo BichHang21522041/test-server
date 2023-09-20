@@ -6,9 +6,7 @@ flask
 flask_cors
 numpy
 torch
-matplotlib.pyplot
-torch.nn
+matplotlib
 PIL
 collections
-torchvision.datasets
 torchvision
