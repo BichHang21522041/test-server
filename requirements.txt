@@ -1,6 +1,6 @@
 Flask
 Gunicorn
-open_clip
+open_clip_torch
 os
 flask
 flask_cors
