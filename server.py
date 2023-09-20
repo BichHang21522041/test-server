@@ -11,12 +11,8 @@ os.environ["CUDA_VISIBLE_DEVICES"] = ""
 import numpy as np
 import torch
 import open_clip
-from open_clip import tokenizer
 import os
-import matplotlib.pyplot as plt
-import torch.nn as nn
 from PIL import Image
-from collections import OrderedDict
 from torchvision.datasets import CIFAR100
 from torchvision import transforms
 
