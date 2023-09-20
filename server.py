@@ -20,10 +20,6 @@ from collections import OrderedDict
 from torchvision.datasets import CIFAR100
 from torchvision import transforms
 
-
-
-
-
 app = Flask(__name__)
 
 model = torch.load("model_full.pth")
@@ -33,10 +29,6 @@ model.eval()
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-
-# def preprocess():
-#     model, _, preprocess = open_clip.create_model_and_transforms('convnext_base_w', pretrained='laion2b_s13b_b82k_augreg')
-#     return preprocess
 
 def _convert_to_rgb(image):
     return image.convert('RGB')
@@ -59,18 +51,6 @@ def token(text):
     tokenizer = open_clip.get_tokenizer('convnext_base_w')
     texts = tokenizer(text)
     return texts
-
-# @app.route("/submit", methods = ['GET', 'POST'])
-# def get_output():
-# 	if request.method == 'POST':
-# 		img = request.files['my_image']
-
-# 		img_path = "static/" + img.filename	
-# 		img.save(img_path)
-
-# 		p = 'Chua biet'
-
-# 	return render_template("index.html", prediction = p, img_path = img_path)
 
 
 def building_feature(image):
